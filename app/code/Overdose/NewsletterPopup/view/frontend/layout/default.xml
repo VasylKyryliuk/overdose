@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="before.body.end">
+            <block name="subscribe.popup" template="Overdose_NewsletterPopup::subscribe-popup.phtml" after="-">
+                <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe.new" as="subscribe.new"
+                       template="Magento_Newsletter::subscribe.phtml" before="-" ifconfig="newsletter/general/active"/>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
