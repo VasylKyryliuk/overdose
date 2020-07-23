@@ -3,8 +3,13 @@
     <body>
         <referenceContainer name="before.body.end">
             <block name="subscribe.popup" template="Overdose_NewsletterPopup::subscribe-popup.phtml" after="-">
-                <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe.new" as="subscribe.new"
-                       template="Magento_Newsletter::subscribe.phtml" before="-" ifconfig="newsletter/general/active"/>
+                <block class="Magento\Cms\Block\Block" name="subscribe.popup.cms" as="subscribe.popup.cms">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">newsletter-popup</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe.popup" as="subscribe.popup"
+                       template="Overdose_NewsletterPopup::subscribe.phtml" ifconfig="newsletter/general/active"/>
             </block>
         </referenceContainer>
     </body>

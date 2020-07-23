@@ -1,5 +1,14 @@
-<div data-bind="mageInit: {'newsletter-modal':{}}">
-    <div class="content">
-        <?= $block->getChildHtml('subscribe.new') ?>
+<?php if ($block->getChildHtml('subscribe.popup')) :?>
+
+<div data-bind="mageInit: {'newsletter-popup':{'timeout': 10000, 'modalClass': 'newsletter-popup', 'buttons': ''}}" style="display: none;">
+    <div class="content newsletter-popup-container">
+        <div class="cms-container">
+            <?= $block->getChildHtml('subscribe.popup.cms') ?>
+            <div class="separator"></div>
+        </div>
+
+        <?= $block->getChildHtml('subscribe.popup') ?>
     </div>
 </div>
+
+<?php endif; ?>

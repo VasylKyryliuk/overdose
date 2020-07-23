@@ -4,7 +4,7 @@ define([
     'Magento_Ui/js/modal/modal'
 ], function ($) {
 
-    $.widget('newsletter.modal', $.mage.modal, {
+    $.widget('newsletter.popup', $.mage.modal, {
         options: {
             timeout: 1000
         },
@@ -17,5 +17,5 @@ define([
         }
     });
 
-    return $.newsletter.modal;
+    return $.newsletter.popup;
 });

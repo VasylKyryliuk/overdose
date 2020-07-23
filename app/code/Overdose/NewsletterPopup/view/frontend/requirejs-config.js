@@ -1,7 +1,7 @@
 var config = {
     map: {
         '*': {
-            'newsletter-modal':'Overdose_NewsletterPopup/js/modal-popup'
+            'newsletter-popup':'Overdose_NewsletterPopup/js/newsletter-popup'
         }
     }
 };

@@ -242,6 +242,7 @@ return [
         'Klarna_Kp' => 1,
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
+        'Overdose_Cms' => 1,
         'Overdose_NewsletterPopup' => 1,
         'Temando_ShippingRemover' => 1,
         'Vertex_Tax' => 1,

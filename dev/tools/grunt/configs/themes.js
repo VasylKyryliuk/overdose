@@ -41,6 +41,16 @@ module.exports = {
         ],
         dsl: 'less'
     },
+    overdose: {
+        area: 'frontend',
+        name: 'Overdose/custom',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l'
+        ],
+        dsl: 'less'
+    },
     backend: {
         area: 'adminhtml',
         name: 'Magento/backend',
